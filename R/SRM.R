@@ -126,8 +126,6 @@ SRM.fit <- function(
   # Collect input data as a tibble
   # data <- collect_data(data=data, x=x, y=y, z=z)
 
-  browser()
-
   # Check inputs:
   if (!tsibble::is_tsibble(data)) {
     stop("Error: Please enter a 'tsibble' object for the argument 'data'.")
