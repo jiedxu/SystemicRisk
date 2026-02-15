@@ -113,7 +113,7 @@ SRM.fit <- function(data,
   # data <- collect_data(data=data, x=x, y=y, z=z)
 
   # Check inputs:
-  if (!is_tsibble(data)) stop("Error: Please enter a 'tsibble' object for the argument 'data'.")
+  if (!tsibble::is_tsibble(data)) stop("Error: Please enter a 'tsibble' object for the argument 'data'.")
 
 
   models_implemented <- c("joint_linear",
