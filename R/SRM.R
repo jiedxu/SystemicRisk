@@ -538,7 +538,7 @@ autoplot.SRM <- function(obj, facet_names = NULL) {
       color = Symbol
     )) +
     ggplot2::scale_colour_manual(values = c("red", "blue")) +
-    ggplot2::facet_wrap(~Symbol, ncol = 1) +
+    ggplot2::facet_wrap(~Symbol, ncol = 1, scales = "free_y") +
     ggplot2::theme_bw() +
     ggplot2::theme(legend.position = "bottom") +
     ggplot2::ylab("Negative Returns")
